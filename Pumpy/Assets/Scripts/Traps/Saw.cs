@@ -3,6 +3,15 @@ using System.Collections;
 
 public class Saw : MonoBehaviour
 {
+    //Shake constants
+    private readonly float duration = 0.4f;
+    private readonly float magnitude = 0.1f;
+    private readonly float rotationMagnitude = 0.5f;
+
+    //Shake
+    [SerializeField] private Transform cameraRef;
+    private Shaker shaker; 
+
     private readonly float rotationSpeed = 1000f;
 
     private AudioSource sawSound;
@@ -15,6 +24,7 @@ public class Saw : MonoBehaviour
 
     private void Start()
     {
+        shaker = GetComponent<Shaker>();
         sawSound = GetComponent<AudioSource>();
         sawSound.clip = sound;
         sawSound.Play();
@@ -30,6 +40,7 @@ public class Saw : MonoBehaviour
         if (collision.tag.Equals("Player"))
             PlayerControl.Instance.Alive = false;
 
+        StartCoroutine(shaker.Shake(cameraRef, duration, magnitude, rotationMagnitude));
         StartCoroutine(ActivateSawSound());
     }
 

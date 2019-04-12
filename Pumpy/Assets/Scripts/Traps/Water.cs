@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class HurtingThings : MonoBehaviour
+public class Water : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {

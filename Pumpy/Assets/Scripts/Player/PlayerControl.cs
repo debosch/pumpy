@@ -19,6 +19,7 @@ public class PlayerControl : MonoBehaviour
     //Game cycle
     public bool Alive { get; set; }
     private bool respawning = false;
+    private readonly float timeAfterDeath = 3f;
 
     //Prefabs
     [SerializeField] private Transform deathPrefab;
@@ -39,7 +40,7 @@ public class PlayerControl : MonoBehaviour
     private bool facingRight;
     private float dirX;
     private readonly int moveSpeed = 6;
-    private readonly int jumpForce = 12;
+    private readonly int jumpForce = 14;
 
     //Ground Check
     [SerializeField] private LayerMask whatIsGround;
@@ -112,7 +113,7 @@ public class PlayerControl : MonoBehaviour
         if (isGrounded)
         {
             animator.SetBool("Falling", false);
-
+           // animator.ResetTrigger("Jump");
             animator.SetFloat("Speed", Mathf.Abs(dirX));
         }
 
@@ -145,7 +146,7 @@ public class PlayerControl : MonoBehaviour
     private void HandleBoundary()
     {
         transform.position = new Vector2(
-        Mathf.Clamp(transform.position.x, -18.6f, Mathf.Infinity),
+        Mathf.Clamp(transform.position.x, -18.6f, 18.83f),
         Mathf.Clamp(transform.position.y, -11, 6.12f));
 
         if (transform.position.y < -10)
@@ -182,7 +183,7 @@ public class PlayerControl : MonoBehaviour
         GetComponent<SpriteRenderer>().enabled = false;
         animator.enabled = false;
 
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(timeAfterDeath);
 
         respawning = false;
     }
