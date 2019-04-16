@@ -19,6 +19,7 @@ public class Saw : MonoBehaviour
     //Sound duration
     private readonly float waitTime = 1.658f;
 
+    //Sounds
     [SerializeField] private AudioClip sound;
     [SerializeField] private AudioClip killSound;
 
@@ -37,7 +38,7 @@ public class Saw : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag.Equals("Player"))
+        if (collision.CompareTag("Player"))
             PlayerControl.Instance.Alive = false;
 
         StartCoroutine(shaker.Shake(cameraRef, duration, magnitude, rotationMagnitude));

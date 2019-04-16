@@ -113,11 +113,10 @@ public class PlayerControl : MonoBehaviour
         if (isGrounded)
         {
             animator.SetBool("Falling", false);
-           // animator.ResetTrigger("Jump");
             animator.SetFloat("Speed", Mathf.Abs(dirX));
         }
 
-        if (rb.velocity.y < 0)
+        if (rb.velocity.y < 0 && !isGrounded)
         {
             animator.SetBool("Falling", true);
         }
@@ -179,7 +178,7 @@ public class PlayerControl : MonoBehaviour
         audioSrc.clip = deathSound;
         audioSrc.Play();
 
-        GetComponent<CircleCollider2D>().enabled = false;
+        GetComponent<BoxCollider2D>().enabled = false;
         GetComponent<SpriteRenderer>().enabled = false;
         animator.enabled = false;
 
