@@ -39,10 +39,11 @@ public class Saw : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
+        {
             PlayerControl.Instance.Alive = false;
-
-        StartCoroutine(shaker.Shake(cameraRef, duration, magnitude, rotationMagnitude));
-        StartCoroutine(ActivateSawSound());
+            StartCoroutine(shaker.Shake(cameraRef, duration, magnitude, rotationMagnitude));
+            StartCoroutine(ActivateSawSound());
+        }
     }
 
     private IEnumerator ActivateSawSound()
