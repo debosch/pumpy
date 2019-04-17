@@ -1,18 +1,26 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class GoldSpawning : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    [SerializeField] private GameObject gold;
+
+    [SerializeField] private Transform[] spawnPoints;
+
+    private float timeToSpawn = .5f;
+
+    private void Update()
     {
+        if (timeToSpawn < 0)
+        {
+            var randomPoint = Random.Range(0,spawnPoints.Length);
+
+            Instantiate(gold, spawnPoints[randomPoint].position, Quaternion.identity);
+
+            timeToSpawn = .5f;
+        }
+        else
+            timeToSpawn -= Time.deltaTime;
         
     }
 }

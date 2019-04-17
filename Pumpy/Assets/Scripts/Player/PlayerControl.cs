@@ -20,7 +20,6 @@ public class PlayerControl : MonoBehaviour
     public bool Alive { get; set; }
     private bool respawning = false;
     private readonly float timeAfterDeath = 3f;
-    private float liveTime = 10f;
 
     //Prefabs
     [SerializeField] private Transform deathPrefab;
@@ -70,11 +69,6 @@ public class PlayerControl : MonoBehaviour
 
     private void FixedUpdate()
     {
-        liveTime -= Time.deltaTime;
-
-        if (liveTime < 0)
-            Alive = false;
-
         if (Alive)
         {
             isGrounded = Physics2D.OverlapCircle(groundPoint.position, radius, whatIsGround);
