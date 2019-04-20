@@ -15,7 +15,7 @@ public class UIHolder : MonoBehaviour
         var currentTime = PlayerLifeTime.LifeTime;
         if (currentTime >= 0)
         {
-            string timeLeft = string.Format("Time left: {0:0.0}", currentTime);
+            string timeLeft = string.Format("Time remaining: {0:0.0}", currentTime);
             lifeTime.text = timeLeft;
         }
     }

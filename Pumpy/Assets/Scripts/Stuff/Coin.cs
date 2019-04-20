@@ -1,8 +1,16 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 public class Coin : MonoBehaviour
 {
     private float coinLifeTime = 5f;
+
+    private AudioSource sound;
+
+    private void Start()
+    {
+        sound = GetComponent<AudioSource>();
+    }
 
     private void Update()
     {
@@ -16,8 +24,11 @@ public class Coin : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            PlayerLifeTime.LifeTime += 2f;
-            Destroy(gameObject);
+            PlayerLifeTime.LifeTime += 3f;
+            GetComponent<SpriteRenderer>().enabled = false;
+            GetComponent<BoxCollider2D>().enabled = false;
+            sound.Play();
         }
     }
+
 }

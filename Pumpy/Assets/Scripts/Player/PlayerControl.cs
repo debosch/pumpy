@@ -146,7 +146,7 @@ public class PlayerControl : MonoBehaviour
     {
         transform.position = new Vector2(
         Mathf.Clamp(transform.position.x, -18.6f, 18.83f),
-        Mathf.Clamp(transform.position.y, -11, 6.12f));
+        Mathf.Clamp(transform.position.y, -11, 10));
 
         if (transform.position.y < -10)
             Alive = false;
@@ -178,12 +178,24 @@ public class PlayerControl : MonoBehaviour
         audioSrc.clip = deathSound;
         audioSrc.Play();
 
-        GetComponent<BoxCollider2D>().enabled = false;
+        rb.simulated = false;
         GetComponent<SpriteRenderer>().enabled = false;
         animator.enabled = false;
 
         yield return new WaitForSeconds(timeAfterDeath);
 
         respawning = false;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Moving Platform"))
+            transform.parent = collision.transform;
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Moving Platform"))
+            transform.parent = null;
     }
 }

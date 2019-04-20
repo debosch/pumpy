@@ -17,6 +17,8 @@ public class PlayerLifeTime : MonoBehaviour
         }
     }
 
+    private bool start = false;
+
     private void Start()
     {
         _lifeTime = 10f;
@@ -24,6 +26,7 @@ public class PlayerLifeTime : MonoBehaviour
 
     private void Update()
     {
+
         if (PlayerControl.Instance.Alive)
         {
             _lifeTime -= Time.deltaTime;

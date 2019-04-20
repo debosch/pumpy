@@ -3,7 +3,7 @@
 public class GoldSpawning : MonoBehaviour
 {
 
-    [SerializeField] private GameObject gold;
+    [SerializeField] private Transform gold;
 
     [SerializeField] private Transform[] spawnPoints;
 
@@ -14,7 +14,7 @@ public class GoldSpawning : MonoBehaviour
         if (timeToSpawn < 0)
         {
             var randomPoint = Random.Range(0,spawnPoints.Length);
-
+           
             Instantiate(gold, spawnPoints[randomPoint].position, Quaternion.identity);
 
             timeToSpawn = .5f;
