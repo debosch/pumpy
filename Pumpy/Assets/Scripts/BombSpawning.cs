@@ -4,10 +4,22 @@ public class BombSpawning : MonoBehaviour
 {
     [SerializeField] private Transform bomb;
 
-    [SerializeField] private Transform[] bombSpawnPoints;
+    [SerializeField] private Transform bombHolder;
+
+    private Transform[] bombSpawnPoints;
 
     private float timeUntilSpawn = 1f;
-    
+
+    private void Start()
+    {
+        int bombCount = 17;
+
+        bombSpawnPoints = new Transform[bombCount]; 
+
+        for (int i = 0; i < bombCount; i++)
+            bombSpawnPoints[i] = bombHolder.transform.GetChild(i);
+    }
+
     private void Update()
     {
         if (timeUntilSpawn <= 0)

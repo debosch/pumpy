@@ -5,16 +5,15 @@ public class Bomb : MonoBehaviour
 {
     [SerializeField] private AudioClip timerSound;
     [SerializeField] private Transform explosion;
+    [SerializeField] private LayerMask whatToHit;
 
     private AudioSource audioSrc;
     private Animator animator;
 
-    private readonly float timerSoundTime = 1.817f;
-
     private void Start()
     {
         audioSrc = GetComponent<AudioSource>();
-        animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();       
 
         audioSrc.clip = timerSound;
         audioSrc.Play();
@@ -22,10 +21,10 @@ public class Bomb : MonoBehaviour
         StartCoroutine(Explosion());
     }
 
-
     private IEnumerator Explosion()
     {
-        yield return new WaitForSeconds(timerSoundTime);
+        yield return new WaitForSeconds(Random.Range(1f,2f));
+        audioSrc.Stop();
 
         Instantiate(explosion, transform.position, Quaternion.identity);
         Destroy(gameObject);

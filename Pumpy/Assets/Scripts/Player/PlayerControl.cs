@@ -166,8 +166,7 @@ public class PlayerControl : MonoBehaviour
     {
         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         animator.SetTrigger("Jump");
-        audioSrc.clip = jumpSound;
-        audioSrc.Play();
+        audioSrc.PlayOneShot(jumpSound);
     }
 
     private IEnumerator Death()
@@ -175,8 +174,7 @@ public class PlayerControl : MonoBehaviour
         respawning = true;
         Instantiate(deathPrefab, transform.position, Quaternion.identity);
 
-        audioSrc.clip = deathSound;
-        audioSrc.Play();
+        audioSrc.PlayOneShot(deathSound);
 
         rb.simulated = false;
         GetComponent<SpriteRenderer>().enabled = false;

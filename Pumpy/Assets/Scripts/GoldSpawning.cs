@@ -5,9 +5,21 @@ public class GoldSpawning : MonoBehaviour
 
     [SerializeField] private Transform gold;
 
-    [SerializeField] private Transform[] spawnPoints;
+    [SerializeField] private Transform spawnPointsHolder;
 
-    private float timeToSpawn = .5f;
+    private Transform[] spawnPoints;
+
+    private float timeToSpawn = 1f;
+
+    private void Start()
+    {
+        int spawnPointsCount = 30;
+
+        spawnPoints = new Transform[spawnPointsCount];
+
+        for (int i = 0; i < spawnPointsCount; i++)
+            spawnPoints[i] = spawnPointsHolder.transform.GetChild(i);
+    }
 
     private void Update()
     {
@@ -17,7 +29,7 @@ public class GoldSpawning : MonoBehaviour
            
             Instantiate(gold, spawnPoints[randomPoint].position, Quaternion.identity);
 
-            timeToSpawn = .5f;
+            timeToSpawn = Random.Range(0.5f, 1.5f);
         }
         else
             timeToSpawn -= Time.deltaTime;

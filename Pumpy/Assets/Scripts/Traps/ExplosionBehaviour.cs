@@ -6,6 +6,7 @@ public class ExplosionBehaviour : MonoBehaviour
     private readonly float magnitude = 0.07f;
     private readonly float rotationMagnitude = 0.3f;
     private readonly float explosionRange = 1.5f;
+    private readonly float distanceToShake = 7f;
 
     private Shaker shaker;
     private AudioSource audioSrc;
@@ -25,7 +26,8 @@ public class ExplosionBehaviour : MonoBehaviour
 
         ExplosionKill();
 
-        StartCoroutine(shaker.Shake(cameraRef, duration, magnitude, rotationMagnitude));
+        if (Vector2.Distance(target.position, transform.position) < distanceToShake)
+            StartCoroutine(shaker.Shake(cameraRef, duration, magnitude, rotationMagnitude));
     }
 
     private void ExplosionKill()

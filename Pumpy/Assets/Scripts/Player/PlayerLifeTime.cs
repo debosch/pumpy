@@ -17,7 +17,7 @@ public class PlayerLifeTime : MonoBehaviour
         }
     }
 
-    private bool start = false;
+    private float currentLifeTime = 0f;
 
     private void Start()
     {
@@ -26,10 +26,13 @@ public class PlayerLifeTime : MonoBehaviour
 
     private void Update()
     {
-
         if (PlayerControl.Instance.Alive)
         {
             _lifeTime -= Time.deltaTime;
+            currentLifeTime += Time.deltaTime;
+
+            if (currentLifeTime > PlayerPrefs.GetFloat("HighScore", 0))
+                PlayerPrefs.SetFloat("HighScore", currentLifeTime);
 
             if (_lifeTime <= 0)
                 PlayerControl.Instance.Alive = false;

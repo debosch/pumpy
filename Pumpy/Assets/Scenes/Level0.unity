@@ -1337,7 +1337,7 @@ GameObject:
   m_Layer: 0
   m_Name: Bomb Spawning (15)
   m_TagString: Untagged
-  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1665,7 +1665,7 @@ GameObject:
   m_Layer: 0
   m_Name: Bomb Spawning (16)
   m_TagString: Untagged
-  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2167,7 +2167,7 @@ GameObject:
   m_Layer: 0
   m_Name: Bomb Spawning (2)
   m_TagString: Untagged
-  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2661,7 +2661,7 @@ GameObject:
   m_Layer: 0
   m_Name: Bomb Spawning
   m_TagString: Untagged
-  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3003,7 +3003,7 @@ GameObject:
   m_Layer: 0
   m_Name: Bomb Spawning (7)
   m_TagString: Untagged
-  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3033,7 +3033,7 @@ GameObject:
   m_Layer: 0
   m_Name: Bomb Spawning (6)
   m_TagString: Untagged
-  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3750,7 +3750,7 @@ GameObject:
   m_Layer: 0
   m_Name: Bomb Spawning (10)
   m_TagString: Untagged
-  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4937,7 +4937,7 @@ GameObject:
   m_Layer: 0
   m_Name: Bomb Spawning (1)
   m_TagString: Untagged
-  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -5958,7 +5958,7 @@ GameObject:
   m_Layer: 0
   m_Name: Bomb Spawning (13)
   m_TagString: Untagged
-  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6245,7 +6245,7 @@ GameObject:
   m_Layer: 0
   m_Name: Bomb Spawning (4)
   m_TagString: Untagged
-  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -8064,7 +8064,7 @@ GameObject:
   m_Layer: 0
   m_Name: Bomb Spawning (5)
   m_TagString: Untagged
-  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -8262,7 +8262,7 @@ GameObject:
   m_Layer: 0
   m_Name: Bomb Spawning (9)
   m_TagString: Untagged
-  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -8681,7 +8681,7 @@ GameObject:
   m_Layer: 0
   m_Name: Bomb Spawning (14)
   m_TagString: Untagged
-  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -10295,7 +10295,7 @@ GameObject:
   m_Layer: 0
   m_Name: Bomb Spawning (8)
   m_TagString: Untagged
-  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -11499,7 +11499,6 @@ GameObject:
   - component: {fileID: 1422796126}
   - component: {fileID: 1422796128}
   - component: {fileID: 1422796127}
-  - component: {fileID: 1422796129}
   m_Layer: 5
   m_Name: Player Life Time Text
   m_TagString: Untagged
@@ -11568,18 +11567,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1422796125}
   m_CullTransparentMesh: 0
---- !u!114 &1422796129
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1422796125}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19c88d3c7f6b61e45b641f6680643211, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1432068834
 GameObject:
   m_ObjectHideFlags: 0
@@ -13752,6 +13739,87 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1724914407
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1724914410}
+  - component: {fileID: 1724914409}
+  - component: {fileID: 1724914408}
+  m_Layer: 5
+  m_Name: High score text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1724914408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724914407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.6226415, g: 0.36669523, b: 0.16153437, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: ce93e7c7b5686924fbfe32367756cc40, type: 3}
+    m_FontSize: 32
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: 'High score:
+
+'
+--- !u!222 &1724914409
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724914407}
+  m_CullTransparentMesh: 0
+--- !u!224 &1724914410
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724914407}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2065683908}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 100, y: -60}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1727421141
 GameObject:
   m_ObjectHideFlags: 0
@@ -14081,7 +14149,7 @@ GameObject:
   m_Layer: 0
   m_Name: Bomb Spawning (12)
   m_TagString: Untagged
-  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -15556,7 +15624,7 @@ GameObject:
   m_Layer: 0
   m_Name: Game controller
   m_TagString: Untagged
-  m_Icon: {fileID: -5938655980376293919, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -15611,37 +15679,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gold: {fileID: 8049263261700706335, guid: b94ace98d68dc9d4d86d35ae01eb5e89, type: 3}
-  spawnPoints:
-  - {fileID: 743892450}
-  - {fileID: 946589546}
-  - {fileID: 374154012}
-  - {fileID: 809833155}
-  - {fileID: 1401078702}
-  - {fileID: 1037892366}
-  - {fileID: 1003761442}
-  - {fileID: 480967314}
-  - {fileID: 1835379726}
-  - {fileID: 491224762}
-  - {fileID: 75192152}
-  - {fileID: 2120983637}
-  - {fileID: 995415697}
-  - {fileID: 267298049}
-  - {fileID: 838377905}
-  - {fileID: 1735892476}
-  - {fileID: 1879930472}
-  - {fileID: 709879552}
-  - {fileID: 1122724198}
-  - {fileID: 1416836279}
-  - {fileID: 1188836510}
-  - {fileID: 1585529935}
-  - {fileID: 1112389794}
-  - {fileID: 1774745250}
-  - {fileID: 127807140}
-  - {fileID: 1570550788}
-  - {fileID: 1419500722}
-  - {fileID: 329467738}
-  - {fileID: 566264198}
-  - {fileID: 1492892843}
+  spawnPointsHolder: {fileID: 563190385}
 --- !u!114 &1941294465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15655,24 +15693,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bomb: {fileID: 3828787808793124230, guid: a8f6eb7df7556b642b8ca8ef9921d84e, type: 3}
-  bombSpawnPoints:
-  - {fileID: 360773315}
-  - {fileID: 697639356}
-  - {fileID: 281943634}
-  - {fileID: 1981792463}
-  - {fileID: 807426671}
-  - {fileID: 1005246372}
-  - {fileID: 384998277}
-  - {fileID: 381862236}
-  - {fileID: 1283737800}
-  - {fileID: 1013210519}
-  - {fileID: 504162142}
-  - {fileID: 1969598881}
-  - {fileID: 1733653955}
-  - {fileID: 778310639}
-  - {fileID: 1078302002}
-  - {fileID: 191703075}
-  - {fileID: 248834608}
+  bombHolder: {fileID: 276713582}
 --- !u!1 &1958583579
 GameObject:
   m_ObjectHideFlags: 0
@@ -15807,7 +15828,7 @@ GameObject:
   m_Layer: 0
   m_Name: Bomb Spawning (11)
   m_TagString: Untagged
-  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -15916,7 +15937,7 @@ GameObject:
   m_Layer: 0
   m_Name: Bomb Spawning (3)
   m_TagString: Untagged
-  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -16282,6 +16303,7 @@ GameObject:
   - component: {fileID: 2065683907}
   - component: {fileID: 2065683906}
   - component: {fileID: 2065683905}
+  - component: {fileID: 2065683909}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -16361,6 +16383,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1422796126}
+  - {fileID: 1724914410}
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16369,6 +16392,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &2065683909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2065683904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19c88d3c7f6b61e45b641f6680643211, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeTime: {fileID: 1422796127}
+  highScore: {fileID: 1724914408}
 --- !u!1 &2072886494
 GameObject:
   m_ObjectHideFlags: 0
