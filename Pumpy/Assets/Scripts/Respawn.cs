@@ -7,6 +7,11 @@ public class Respawn : MonoBehaviour
     {
         if (!PlayerControl.Instance.Alive)
             Invoke("Restart", 3f);
+
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(0);
+        }
     }
 
     private void Restart()
